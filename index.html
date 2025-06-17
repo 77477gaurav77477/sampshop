@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="logoipsum-379.png">
+</head>
+<body>  
+    <aside class="sidebar">
+        <div class="upperside">
+            <img src="logoipsum-372 (1).png" alt="" onclick="hideside()">
+            <ul>
+                <li><a href="#"  onclick="showmain()" class="dashopt" >Dashboard</a></li>
+                <li><a href="#" onclick="showGents()" class="gentsopt" >Gents</a></li>
+                <li><a href="#" onclick="showWomen()" class="womenopt" >Women</a></li>
+                <li><a href="#" onclick="showKids()" class="kidopt" >Kids</a></li>
+            </ul>
+        </div>
+        <div id="logged-in">
+            <img src="user (3).png " alt="" onclick="hideside()">
+            <div>
+                <h3 >My Account</h3>
+                <a href="#" onclick="hideside()" class="loggedoff"> UserName</a>
+            </div>
+
+        </div>
+    </aside>
+    
+    <main>
+        <header>
+            <img src="menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="" class="menuBtn" onclick="showside()">
+            <h2 class="page-title"> Dashboard </h2>
+            <img src="shutdown.png"  onclick="logoff()"  class="logoutBtn">
+        </header>
+        <section id="Dashboard" class="content ">
+            <section>
+                <div>
+                    <h3>Top Items</h3>
+                    <div class="top-items">
+                        <div class="img-cont">
+                            <img src="https://sp.yimg.com/ib/th?id=OPAC.pek01PNcXIbMZQ474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Gents Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-cont">
+                            <img src="https://sp.yimg.com/ib/th?id=OPAC.pek01PNcXIbMZQ474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Gents Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-cont"><img src="https://sp.yimg.com/ib/th?id=OPAC.i%2fnLi3DLPktGBg474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Dress</h4>
+                            <p>$50</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-cont"><img src="https://sp.yimg.com/ib/th?id=OPAC.i%2fnLi3DLPktGBg474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Dress</h4>
+                            <p>$50</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-cont"><img src="https://sp.yimg.com/ib/th?id=OPAC.KNYdnkSTpsvEEw474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Kid Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Seasonal</h3>
+                    <div class="slider-part">
+                        <div class="img-contt">
+                            <img src="https://sp.yimg.com/ib/th?id=OPAC.KNYdnkSTpsvEEw474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Kid Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-contt"><img src="https://sp.yimg.com/ib/th?id=OPAC.KNYdnkSTpsvEEw474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Kid Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-contt"><img src="https://sp.yimg.com/ib/th?id=OPAC.KNYdnkSTpsvEEw474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Kid Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-contt"><img src="https://sp.yimg.com/ib/th?id=OPAC.i%2fnLi3DLPktGBg474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Dress</h4>
+                            <p>$50</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-contt"><img src="https://sp.yimg.com/ib/th?id=OPAC.i%2fnLi3DLPktGBg474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Dress</h4>
+                            <p>$50</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-contt"><img src="https://sp.yimg.com/ib/th?id=OPAC.i%2fnLi3DLPktGBg474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Dress</h4>
+                            <p>$50</p>
+                            <button> Buy Now</button>
+                        </div><div class="img-contt"><img src="https://sp.yimg.com/ib/th?id=OPAC.i%2fnLi3DLPktGBg474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Dress</h4>
+                            <p>$50</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-contt">
+                            <img src="https://sp.yimg.com/ib/th?id=OPAC.pek01PNcXIbMZQ474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Gents Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-contt">
+                            <img src="https://sp.yimg.com/ib/th?id=OPAC.pek01PNcXIbMZQ474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Gents Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section id="Women" class="content">
+            <section>
+                <div>
+                    <h3>Top Items</h3>
+                    <div class="top-items">
+                        <div class="img-cont"><img src="https://sp.yimg.com/ib/th?id=OPAC.i%2fnLi3DLPktGBg474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Dress</h4>
+                            <p>$50</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-cont"><img src="https://sp.yimg.com/ib/th?id=OPAC.i%2fnLi3DLPktGBg474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Dress</h4>
+                            <p>$50</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-cont"><img src="https://sp.yimg.com/ib/th?id=OPAC.i%2fnLi3DLPktGBg474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Dress</h4>
+                            <p>$50</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-cont"><img src="https://sp.yimg.com/ib/th?id=OPAC.i%2fnLi3DLPktGBg474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Dress</h4>
+                            <p>$50</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-cont"><img src="https://sp.yimg.com/ib/th?id=OPAC.i%2fnLi3DLPktGBg474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Dress</h4>
+                            <p>$50</p>
+                            <button> Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Seasonal</h3>
+                    <div class="slider-part">
+                        <div class="img-contt"><img src="https://sp.yimg.com/ib/th?id=OPAC.i%2fnLi3DLPktGBg474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Dress</h4>
+                            <p>$50</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-contt"><img src="https://sp.yimg.com/ib/th?id=OPAC.i%2fnLi3DLPktGBg474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Dress</h4>
+                            <p>$50</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-contt"><img src="https://sp.yimg.com/ib/th?id=OPAC.i%2fnLi3DLPktGBg474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Dress</h4>
+                            <p>$50</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-contt"><img src="https://sp.yimg.com/ib/th?id=OPAC.i%2fnLi3DLPktGBg474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Dress</h4>
+                            <p>$50</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-contt"><img src="https://sp.yimg.com/ib/th?id=OPAC.i%2fnLi3DLPktGBg474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Dress</h4>
+                            <p>$50</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-contt"><img src="https://sp.yimg.com/ib/th?id=OPAC.i%2fnLi3DLPktGBg474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Dress</h4>
+                            <p>$50</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-contt"><img src="https://sp.yimg.com/ib/th?id=OPAC.i%2fnLi3DLPktGBg474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Dress</h4>
+                            <p>$50</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-contt"><img src="https://sp.yimg.com/ib/th?id=OPAC.i%2fnLi3DLPktGBg474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Dress</h4>
+                            <p>$50</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-contt"><img src="https://sp.yimg.com/ib/th?id=OPAC.i%2fnLi3DLPktGBg474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Dress</h4>
+                            <p>$50</p>
+                            <button> Buy Now</button>
+                        </div>
+
+                </div>
+            </section>
+        </section>
+
+        <section id="Kids" class="content">
+            <section>
+                <div>
+                    <h3>Top Items</h3>
+                    <div class="top-items">
+                        <div class="img-cont"><img src="https://sp.yimg.com/ib/th?id=OPAC.KNYdnkSTpsvEEw474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Kid Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-cont"><img src="https://sp.yimg.com/ib/th?id=OPAC.KNYdnkSTpsvEEw474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Kid Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-cont"><img src="https://sp.yimg.com/ib/th?id=OPAC.KNYdnkSTpsvEEw474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Kid Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-cont"><img src="https://sp.yimg.com/ib/th?id=OPAC.KNYdnkSTpsvEEw474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Kid Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-cont"><img src="https://sp.yimg.com/ib/th?id=OPAC.KNYdnkSTpsvEEw474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Kid Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Seasonal</h3>
+                    <div class="slider-part">
+                        <div class="img-contt"><img src="https://sp.yimg.com/ib/th?id=OPAC.KNYdnkSTpsvEEw474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Kid Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-contt"><img src="https://sp.yimg.com/ib/th?id=OPAC.KNYdnkSTpsvEEw474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Kid Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-contt"><img src="https://sp.yimg.com/ib/th?id=OPAC.KNYdnkSTpsvEEw474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Kid Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-contt"><img src="https://sp.yimg.com/ib/th?id=OPAC.KNYdnkSTpsvEEw474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Kid Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-contt"><img src="https://sp.yimg.com/ib/th?id=OPAC.KNYdnkSTpsvEEw474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Kid Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-contt"><img src="https://sp.yimg.com/ib/th?id=OPAC.KNYdnkSTpsvEEw474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Kid Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-contt"><img src="https://sp.yimg.com/ib/th?id=OPAC.KNYdnkSTpsvEEw474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Kid Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-contt"><img src="https://sp.yimg.com/ib/th?id=OPAC.KNYdnkSTpsvEEw474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Kid Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-contt"><img src="https://sp.yimg.com/ib/th?id=OPAC.KNYdnkSTpsvEEw474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Kid Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-contt"><img src="https://sp.yimg.com/ib/th?id=OPAC.KNYdnkSTpsvEEw474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Kid Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section id="Gents" class="content">
+            <section>
+                <div>
+                    <h3>Top Items</h3>
+                    <div class="top-items">
+                        <div class="img-cont">
+                            <img src="https://sp.yimg.com/ib/th?id=OPAC.pek01PNcXIbMZQ474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Gents Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-cont">
+                            <img src="https://sp.yimg.com/ib/th?id=OPAC.pek01PNcXIbMZQ474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Gents Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-cont">
+                            <img src="https://sp.yimg.com/ib/th?id=OPAC.pek01PNcXIbMZQ474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Gents Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-cont">
+                            <img src="https://sp.yimg.com/ib/th?id=OPAC.pek01PNcXIbMZQ474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Gents Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-cont">
+                            <img src="https://sp.yimg.com/ib/th?id=OPAC.pek01PNcXIbMZQ474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Gents Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Seasonal</h3>
+                    <div class="slider-part">
+                        <div class="img-contt">
+                            <img src="https://sp.yimg.com/ib/th?id=OPAC.pek01PNcXIbMZQ474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Gents Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-contt">
+                            <img src="https://sp.yimg.com/ib/th?id=OPAC.pek01PNcXIbMZQ474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Gents Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-contt">
+                            <img src="https://sp.yimg.com/ib/th?id=OPAC.pek01PNcXIbMZQ474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Gents Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-contt">
+                            <img src="https://sp.yimg.com/ib/th?id=OPAC.pek01PNcXIbMZQ474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Gents Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-contt">
+                            <img src="https://sp.yimg.com/ib/th?id=OPAC.pek01PNcXIbMZQ474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Gents Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-contt">
+                            <img src="https://sp.yimg.com/ib/th?id=OPAC.pek01PNcXIbMZQ474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Gents Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-contt">
+                            <img src="https://sp.yimg.com/ib/th?id=OPAC.pek01PNcXIbMZQ474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Gents Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-contt">
+                            <img src="https://sp.yimg.com/ib/th?id=OPAC.pek01PNcXIbMZQ474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Gents Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                        <div class="img-contt">
+                            <img src="https://sp.yimg.com/ib/th?id=OPAC.pek01PNcXIbMZQ474C474&o=5&pid=21.1&w=174&h=174" alt="">
+                            <h4>Gents Shirt</h4>
+                            <p>$ 30</p>
+                            <button> Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+    </main>
+    <script>
+        const disp=document.querySelector("#Dashboard")
+        const gent = document.querySelector("#Gents")
+        const wom = document.querySelector("#Women")
+        const kid = document.querySelector("#Kids")
+        const side=document.querySelector('.sidebar')
+        const pageTitle = document.querySelector(".page-title")
+        const ge=document.querySelector('.gentsopt')
+        const wo=document.querySelector('.womenopt')
+        const ki=document.querySelector('.kidopt')
+        const da=document.querySelector('.dashopt')
+
+        function showGents(){
+            disp.style.display='none'
+            gent.style.display='block'
+            wom.style.display='none'
+            kid.style.display='none'
+            if(side.style.width == '100%'){
+                side.style.display='none'
+            }pageTitle.textContent="Dashboard > Gents"
+            da.style.color='white'
+            ge.style.color='#e86e12'
+            ki.style.color='white'
+            wo.style.color='white'
+        }
+        function showWomen(){
+            wom.style.display='none'
+            disp.style.display='none'
+            wom.style.display='block'
+            kid.style.display='none'
+            if(side.style.width == '100%'){
+                side.style.display='none'
+            }pageTitle.textContent="Dashboard > Women"
+            da.style.color='white'
+            ge.style.color='white'
+            ki.style.color='white'
+            wo.style.color='#e86e12'
+        }
+        function showKids(){
+            wom.style.display='none'
+            disp.style.display='none'
+            gent.style.display='none'
+            kid.style.display='block'
+            if(side.style.width == '100%'){
+                side.style.display='none'
+            }pageTitle.textContent="Dashboard > Kids"
+            da.style.color='white'
+            ge.style.color='white'
+            ki.style.color='#e86e12'
+            wo.style.color='white'
+        }
+        function showmain(){
+            wom.style.display='none'
+            gent.style.display='none'
+            disp.style.display='block'
+            kid.style.display='none'
+            if(side.style.width == '100%'){
+                side.style.display='none'
+            }pageTitle.textContent="Dashboard"
+            da.style.color='#e86e12'
+            ge.style.color='white'
+            ki.style.color='white'
+            wo.style.color='white'
+        }
+        function showside(){
+            side.style.display='flex'
+            side.style.width='100%'
+        }
+        function hideside(){
+            if(side.style.width == '100%'){
+                side.style.display='none'
+            }
+        }
+        function logoff(){
+            const log=document.querySelector('.loggedoff')
+            log.style.display='none'
+        }
+    </script>
+</body>
+</html>
