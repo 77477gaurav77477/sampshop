@@ -35,7 +35,6 @@ main{
     width: 17%;
     height: 100%;
     background-color:black;
-    color: #332D56;
     height: 100vh;
     padding: 40px 30px;
     z-index: 99;
@@ -204,7 +203,7 @@ button:hover{
     color:  white;
     background-color: #e86e12;;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 #Women{
     display: none;
@@ -229,7 +228,59 @@ button:hover{
     justify-content: space-between;
     align-items: flex-start;
 }
+.Dark-Mode main{
+    background-color: black;
+}
+.Dark-Mode button{
+    background-color: white;
+    color: black;
+}
+.Dark-Mode button:hover{
+    color:  white;
+    background-color: #e86e12;;
+}
+.Dark-Mode .content h3{
+    color: white;
+}
+.Dark-Mode header h2{
+    color: white;
+}
+.Dark-Mode .sidebar{
+    background-color:white;
+}
+.Dark-Mode .sidebar ul li a{
+    color: black;
+}
+.Dark-Mode .sidebar ul li a:hover{
+    color: blue;
+}
+.Dark-Mode #logged-in div{
+    padding-left: 15px;
+    color: black;
+}
+.Dark-Mode #logged-in div a{
+    color: black;
+}
+.Dark-Mode #logged-in div a:hover{
+    color: blue;
+}
+.Dark-Mode .img-cont{
+    background-color: whitesmoke;
+    box-shadow: rgb(255, 255, 255) 0px 4px 12px;
+}
+.Dark-Mode .img-contt{
+    background-color: whitesmoke;
+    box-shadow: rgb(255, 255, 255) 0px 4px 12px;
+}
 
+
+
+@media (max-width:1235px){
+    #logged-in h3{
+        font-size: 0.8rem;
+        padding-bottom: 5px;
+    }
+}
 @media (max-width:900px){
     .top-items{
         justify-content: flex-start;

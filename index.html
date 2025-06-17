@@ -10,7 +10,7 @@
 <body>  
     <aside class="sidebar">
         <div class="upperside">
-            <img src="logoipsum-372 (1).png" alt="" onclick="hideside()">
+            <img src="logoipsum-372 (2).png" alt="" onclick="hideside()" id="icon">
             <ul>
                 <li><a href="#"  onclick="showmain()" class="dashopt" >Dashboard</a></li>
                 <li><a href="#" onclick="showGents()" class="gentsopt" >Gents</a></li>
@@ -32,6 +32,7 @@
         <header>
             <img src="menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="" class="menuBtn" onclick="showside()">
             <h2 class="page-title"> Dashboard </h2>
+            <div class="siheader">
             <img src="shutdown.png"  onclick="logoff()"  class="logoutBtn">
         </header>
         <section id="Dashboard" class="content ">
@@ -400,19 +401,44 @@
                 </div>
             </section>
         </section>
+        <footer>
+            <button id="toggleBtn">Switch to Dark Mode</button>
+        </footer>
 
     </main>
     <script>
-        const disp=document.querySelector("#Dashboard")
-        const gent = document.querySelector("#Gents")
-        const wom = document.querySelector("#Women")
-        const kid = document.querySelector("#Kids")
-        const side=document.querySelector('.sidebar')
-        const pageTitle = document.querySelector(".page-title")
-        const ge=document.querySelector('.gentsopt')
-        const wo=document.querySelector('.womenopt')
-        const ki=document.querySelector('.kidopt')
-        const da=document.querySelector('.dashopt')
+        const disp=document.querySelector("#Dashboard");
+        const gent = document.querySelector("#Gents");
+        const wom = document.querySelector("#Women");
+        const kid = document.querySelector("#Kids");
+        const side=document.querySelector('.sidebar');
+        const pageTitle = document.querySelector(".page-title");
+        const ge=document.querySelector('.gentsopt');
+        const wo=document.querySelector('.womenopt');
+        const ki=document.querySelector('.kidopt');
+        const da=document.querySelector('.dashopt');
+        const togBtn=document.getElementById('toggleBtn');
+        const bod=document.body;
+
+
+        bod.classList.add('Light-Mode');
+        togBtn.addEventListener('click', () => {
+            if(bod.classList.contains('Light-Mode')){
+                bod.classList.replace( 'Light-Mode','Dark-Mode')
+                togBtn.innerHTML='Switch to light mode'
+                const logo=document.getElementById('icon')
+                logo.src='logoipsum-372 (1).png';
+                document.querySelectorAll(".sidebar .upperside ul li a").forEach(function (e) {e.style.color='black'})
+
+            }else{
+                bod.classList.replace('Dark-Mode','Light-Mode')
+                togBtn.innerHTML='Switch to Dark mode'
+                const logo=document.getElementById('icon')
+                logo.src='logoipsum-372 (2).png';
+                document.querySelectorAll(".sidebar .upperside ul li a").forEach(function (e) {e.style.color='white'})
+            }
+  
+        });
 
         function showGents(){
             disp.style.display='none'
@@ -422,10 +448,17 @@
             if(side.style.width == '100%'){
                 side.style.display='none'
             }pageTitle.textContent="Dashboard > Gents"
-            da.style.color='white'
-            ge.style.color='#e86e12'
-            ki.style.color='white'
-            wo.style.color='white'
+            if(bod.classList.contains('Light-Mode')){
+                da.style.color='white'
+                ge.style.color='#e86e12'
+                ki.style.color='white'
+                wo.style.color='white'
+            }else{
+                da.style.color='black'
+                ge.style.color='blue'
+                ki.style.color='black'
+                wo.style.color='black'
+            }
         }
         function showWomen(){
             wom.style.display='none'
@@ -435,10 +468,18 @@
             if(side.style.width == '100%'){
                 side.style.display='none'
             }pageTitle.textContent="Dashboard > Women"
-            da.style.color='white'
-            ge.style.color='white'
-            ki.style.color='white'
-            wo.style.color='#e86e12'
+            
+            if(bod.classList.contains('Light-Mode')){
+                da.style.color='white'
+                ge.style.color='white'
+                ki.style.color='white'
+                wo.style.color='#e86e12'
+            }else{
+                da.style.color='black'
+                ge.style.color='black'
+                ki.style.color='black'
+                wo.style.color='blue'
+            }
         }
         function showKids(){
             wom.style.display='none'
@@ -448,10 +489,18 @@
             if(side.style.width == '100%'){
                 side.style.display='none'
             }pageTitle.textContent="Dashboard > Kids"
-            da.style.color='white'
-            ge.style.color='white'
-            ki.style.color='#e86e12'
-            wo.style.color='white'
+            
+            if(bod.classList.contains('Light-Mode')){
+                da.style.color='white'
+                ge.style.color='white'
+                ki.style.color='#e86e12'
+                wo.style.color='white'
+            }else{
+                da.style.color='black'
+                ge.style.color='black'
+                ki.style.color='blue'
+                wo.style.color='black'
+            }
         }
         function showmain(){
             wom.style.display='none'
@@ -461,10 +510,17 @@
             if(side.style.width == '100%'){
                 side.style.display='none'
             }pageTitle.textContent="Dashboard"
-            da.style.color='#e86e12'
-            ge.style.color='white'
-            ki.style.color='white'
-            wo.style.color='white'
+            if(bod.classList.contains('Light-Mode')){
+                da.style.color='#e86e12'
+                ge.style.color='white'
+                ki.style.color='white'
+                wo.style.color='white'
+            }else{
+                da.style.color='blue'
+                ge.style.color='black'
+                ki.style.color='black'
+                wo.style.color='black'
+            }
         }
         function showside(){
             side.style.display='flex'
@@ -479,6 +535,8 @@
             const log=document.querySelector('.loggedoff')
             log.style.display='none'
         }
+
+
     </script>
 </body>
 </html>
